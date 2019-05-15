@@ -8,22 +8,17 @@ import java.util.Scanner;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        int wynik=0;
+    public static void main( String[] args ){
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("podaj bok A : ");
+        double A = scanner.nextDouble();
 
-        Scanner scanner =new Scanner(System.in);
-        int N = scanner.nextInt();
+        System.out.println("podaj bok B : ");
+        double B = scanner.nextDouble();
 
-        for (int i = 0 ; i < N; i++)
-        {
+        System.out.println("pole prostokata to " + A * B);
+        System.out.println("obwod prostokata to " + (A + A + B + B ));
 
-            Scanner scanner1 =new Scanner(System.in);
-            int A = scanner1.nextInt();
-            System.out.println("wynik to "+ wynik + A  ) ;
-        }
-        wynik = wynik /N;
-        System.out.println(wynik);
     }
 }
